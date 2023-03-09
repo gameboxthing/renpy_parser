@@ -46,9 +46,9 @@ Some examples of useage
 ```
 The output from the parsed rpy script will look something like the following
 
->Man: It was I all along
-Evil Bob: Me Evil Bob
-Evil Bob: mwahaha
+> Man: It was I all along<br>
+> Evil Bob: Me Evil Bob<br>
+> Evil Bob: mwahaha
 
 The final line here, maintains the name set by the one before.
 
