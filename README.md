@@ -29,16 +29,22 @@ label title:
 Spoken lines are slightly more complex than the title and look something like
 the following
 ```
-[character*:name*] text
+[character:name] text
 ```
-with the name being an optional argument that changes the name of the character.
+The *name* here is optional.
 This is useful if a mystery character comes into the scene to be named as '???'
 or something to that effect later wanting to change to an actual name. An 
 example of this is bellow
 ```
+[character] text
+```
+some examples of useage
+```
 [evil_bob:Man] it was i all along
 [exil_bob:evil bob] me Evil Bob
+[evil_bob] mwahaha
 ```
+the final line here, maintains the name set by the one before
 
 there is additionally the special case of the narrator taking the *Narration* 
 keyword (i might change this later). This parses into the non-character
@@ -53,7 +59,9 @@ The syntax is as follows
 ```
 [command]
 ```
-this does just get parsed as a comment for the programmer to interpret later
+this does just get parsed as a comment for the programmer to interpret later.
+It is intended to be used for things like the `scene` keyword or `show` or other
+things to that effect.
 
 ### Comments
 any line with a hash (*#*) at the front.
