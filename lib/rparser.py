@@ -142,7 +142,7 @@ class Parser():
         
         # if a name is given add a special name line
         if name:
-            name_line = f'{FS}$ {char} = \'{name}\'\n'
+            name_line = f'{FS}$ {char}.name = \'{name}\'\n'
             output = name_line + output
             
         return output
