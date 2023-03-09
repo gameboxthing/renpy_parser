@@ -172,7 +172,7 @@ class Parser():
         """
         
         if line.startswith('#'):  # true comment
-            return f'{FS}{line.strip()}'  # force the whitespace to be 1 tab
+            return f'{FS}{line.strip()}\n'  # force the whitespace to be 1 tab
         
         # not a true comment
         self.logger.warning(f'Unable to parse as a line {line}\nparsing as comment')
