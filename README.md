@@ -45,9 +45,10 @@ Some examples of useage
 [evil_bob] mwahaha
 ```
 The output from the parsed rpy script will look something like the following
-> Man: it was I all along
-> Evil Bob: Me Evil Bob
-> Evil Bob: mwahaha
+
+>Man: It was I all along
+Evil Bob: Me Evil Bob
+Evil Bob: mwahaha
 
 The final line here, maintains the name set by the one before.
 
