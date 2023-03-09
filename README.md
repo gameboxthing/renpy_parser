@@ -2,14 +2,14 @@
 This is a python script that parses a plain text file into renpy code.
 
 I wrote this program mainly because I didn't want to copy and paste every single
-line of the script a friend was writing
+line of the script a friend was writing.
 
 ## Usage
-open up the *main.py* file and change the input file, or just copy and paste
+Open up the `main.py` file and change the input file, or just copy and paste
 your script into the input file.
 
 Assuming you already have python installed becasue it is required for renpy,
-just run the *main.py* and you will get the output and script files. Thats it.
+just run the `main.py` and you will get the output and script files. Thats it!
 
 ## Formatting
 This parser does require some specific syntax to make everything work, but it
@@ -20,7 +20,7 @@ should be more human than renpy code.
 >> title
 ```
 
-outputs the line as rpy
+Outputs the line as rpy label
 ```
 label title:
 ```
@@ -31,22 +31,27 @@ the following
 ```
 [character:name] text
 ```
-The *name* here is optional.
+The `name` here is optional.
 This is useful if a mystery character comes into the scene to be named as '???'
 or something to that effect later wanting to change to an actual name. An 
 example of this is bellow
 ```
 [character] text
 ```
-some examples of useage
+Some examples of useage
 ```
-[evil_bob:Man] it was i all along
-[exil_bob:evil bob] me Evil Bob
+[evil_bob:Man] It was I all along
+[exil_bob:Evil Bob] Me Evil Bob
 [evil_bob] mwahaha
 ```
-the final line here, maintains the name set by the one before
+The output from the parsed rpy script will look something like the following
+> Man: it was I all along
+> Evil Bob: Me Evil Bob
+> Evil Bob: mwahaha
 
-there is additionally the special case of the narrator taking the *Narration* 
+The final line here, maintains the name set by the one before.
+
+There is additionally the special case of the narrator taking the `Narration` 
 keyword (i might change this later). This parses into the non-character
 format for renpy.
 
@@ -59,12 +64,12 @@ The syntax is as follows
 ```
 [command]
 ```
-this does just get parsed as a comment for the programmer to interpret later.
+This does just get parsed as a comment for the programmer to interpret later.
 It is intended to be used for things like the `scene` keyword or `show` or other
 things to that effect.
 
 ### Comments
-any line with a hash (*#*) at the front.
+Any line with a hash (*#*) at the front
 ```
 # this is a comment
 ```
@@ -73,10 +78,10 @@ any line with a hash (*#*) at the front.
 I still have a lot of testing to do as well as a lot of features that I would 
 like to add to this project, so there is guarenteed to be a few bugs.
 These will most likely look like lines that are half between one and another, if 
-you find any please let me know I want this to be fairly robust.
+you find any please let me know, I want this to be fairly robust.
 
 ## Features and suggestions
 Currently I am working on a UI and a file browser so that you can parse multiple
 files at one time, but this is still a little bit down the line. In the meantime
 I am more than open to suggestions as to what features to include, maybe parsing
-music or sfx.
+music or sfx?
