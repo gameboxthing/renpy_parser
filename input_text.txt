@@ -1,0 +1,15 @@
+>> opening scene
+[show bedroom]
+[mum] Hey! Get up!
+[mum] [player] you're going to be late again!!!!
+[player] ok
+[Narration] I groaned and rolled out onto the floor
+[Narration] *thud*
+[player] ouch!
+[Narration] ...
+[show outside]
+[Narration] I finaly made it outside
+[jeff:???] What took you so long sleepy head
+[Narration] who was that?
+[Narration] I looked across and a tall blond boy was standing there
+[jeff:jeff] Still asleep [player]? its me jeff
